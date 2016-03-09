@@ -1,25 +1,257 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15E56a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Oslo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Projects" translatesAutoresizingMaskIntoConstraints="NO" id="9rI-RG-gss">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72H-3x-DyI">
+                                <rect key="frame" x="329" y="28" width="46" height="30"/>
+                                <connections>
+                                    <segue destination="xD1-5L-cBz" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="U7M-L8-WKJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="578-7L-shc">
+                                <rect key="frame" x="5" y="28" width="46" height="30"/>
+                                <connections>
+                                    <segue destination="gHU-Q8-Lp5" kind="presentation" id="jHQ-zC-peu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya8-J7-OL9">
+                                <rect key="frame" x="14" y="344" width="72" height="30"/>
+                                <connections>
+                                    <segue destination="GdC-WC-XOX" kind="presentation" id="1wC-18-gVR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qb-mT-ePK">
+                                <rect key="frame" x="14" y="438" width="37" height="38"/>
+                                <connections>
+                                    <segue destination="RxY-Lm-wPi" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="LEE-xW-f1e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="332.5" y="344.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jFf-Ba-RyL">
+            <objects>
+                <viewController id="GdC-WC-XOX" customClass="ViewController" customModule="Oslo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5CU-gp-Yam"/>
+                        <viewControllerLayoutGuide type="bottom" id="uUu-c8-xL4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O8h-k5-XdN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Project Detail" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-Bz-pZr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHp-XJ-NH2">
+                                <rect key="frame" x="15" y="584" width="48" height="63"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqY-5y-8VT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332.5" y="-404.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ecv-7v-Mza">
+            <objects>
+                <viewController id="xD1-5L-cBz" customClass="ViewController" customModule="Oslo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cFj-PS-CQV"/>
+                        <viewControllerLayoutGuide type="bottom" id="9gW-Eq-UN9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iic-nC-lKr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efr-WZ-9kh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NWZ-cc-vbA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBH-w8-TX9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="CDY-qi-HVc" kind="unwind" unwindAction="unwindToViewController:" id="ETt-sj-zE6"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMZ-AQ-Lx0" customClass="DesignableView" customModule="Oslo" customModuleProvider="target">
+                                <rect key="frame" x="50" y="254" width="274" height="160"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="textfield-input" translatesAutoresizingMaskIntoConstraints="NO" id="FlG-2T-D1R" customClass="DesignableTextField" customModule="Oslo" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="20" width="240" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="mtj-1y-dNw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.75628101830000005" green="0.52023745210000005" blue="0.2547459594" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon-email" translatesAutoresizingMaskIntoConstraints="NO" id="mdy-LJ-kuo">
+                                        <rect key="frame" x="32" y="40" width="24" height="15"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-1w-VOV">
+                                        <rect key="frame" x="34" y="103" width="20" height="20"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="textfield-input" translatesAutoresizingMaskIntoConstraints="NO" id="aVr-m6-8Ro" customClass="DesignableTextField" customModule="Oslo" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="85" width="240" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="BRA-sB-Ysq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.75628101830000005" green="0.52023745210000005" blue="0.2547459594" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aVr-m6-8Ro" firstAttribute="leading" secondItem="eMZ-AQ-Lx0" secondAttribute="leading" constant="17" id="17t-oC-2Zk"/>
+                                    <constraint firstItem="aVr-m6-8Ro" firstAttribute="top" secondItem="FlG-2T-D1R" secondAttribute="bottom" constant="10" id="3hN-Wj-HDq"/>
+                                    <constraint firstItem="mdy-LJ-kuo" firstAttribute="centerY" secondItem="FlG-2T-D1R" secondAttribute="centerY" id="7lL-Yd-cIN"/>
+                                    <constraint firstAttribute="height" constant="160" id="CUL-ei-9JS"/>
+                                    <constraint firstAttribute="trailing" secondItem="FlG-2T-D1R" secondAttribute="trailing" constant="17" id="Hci-w7-FHW"/>
+                                    <constraint firstItem="aVr-m6-8Ro" firstAttribute="leading" secondItem="dsw-1w-VOV" secondAttribute="trailing" constant="-37" id="NL4-FG-iZI"/>
+                                    <constraint firstItem="dsw-1w-VOV" firstAttribute="centerY" secondItem="aVr-m6-8Ro" secondAttribute="centerY" id="Rpy-zV-o4P"/>
+                                    <constraint firstItem="FlG-2T-D1R" firstAttribute="leading" secondItem="mdy-LJ-kuo" secondAttribute="trailing" constant="-39" id="Snh-PU-PcA"/>
+                                    <constraint firstAttribute="width" constant="274" id="dPk-GL-nFw"/>
+                                    <constraint firstAttribute="trailing" secondItem="aVr-m6-8Ro" secondAttribute="trailing" constant="17" id="dhO-EF-ddE"/>
+                                    <constraint firstAttribute="bottom" secondItem="aVr-m6-8Ro" secondAttribute="bottom" constant="20" id="j46-2A-JAa"/>
+                                    <constraint firstItem="FlG-2T-D1R" firstAttribute="top" secondItem="eMZ-AQ-Lx0" secondAttribute="top" constant="20" id="q9z-hO-sKz"/>
+                                    <constraint firstItem="FlG-2T-D1R" firstAttribute="leading" secondItem="eMZ-AQ-Lx0" secondAttribute="leading" constant="17" id="v0J-UH-dLy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Efr-WZ-9kh" secondAttribute="trailing" id="4KN-tH-gEL"/>
+                            <constraint firstItem="Efr-WZ-9kh" firstAttribute="top" secondItem="iic-nC-lKr" secondAttribute="top" id="HyU-B3-13K"/>
+                            <constraint firstItem="eMZ-AQ-Lx0" firstAttribute="centerY" secondItem="iic-nC-lKr" secondAttribute="centerY" id="atM-tQ-6Ml"/>
+                            <constraint firstItem="9gW-Eq-UN9" firstAttribute="top" secondItem="Efr-WZ-9kh" secondAttribute="bottom" id="iYc-ij-2gn"/>
+                            <constraint firstItem="Efr-WZ-9kh" firstAttribute="leading" secondItem="iic-nC-lKr" secondAttribute="leading" id="n0c-A9-NJB"/>
+                            <constraint firstItem="eMZ-AQ-Lx0" firstAttribute="centerX" secondItem="iic-nC-lKr" secondAttribute="centerX" id="xpv-dz-bGg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJE-xX-6hS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CDY-qi-HVc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="843.5" y="344.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kB7-tI-Eis">
+            <objects>
+                <viewController id="gHU-Q8-Lp5" customClass="ViewController" customModule="Oslo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pEo-QH-SR1"/>
+                        <viewControllerLayoutGuide type="bottom" id="FcO-vl-4Tb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="slo-si-qkn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="ATb-8O-WBW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CsU-uK-Shb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163.5" y="344.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Es3-ka-E0f">
+            <objects>
+                <viewController id="RxY-Lm-wPi" customClass="ViewController" customModule="Oslo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KHb-sV-sRD"/>
+                        <viewControllerLayoutGuide type="bottom" id="nZ1-qu-ox4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SR9-HZ-2So">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="User Profile" translatesAutoresizingMaskIntoConstraints="NO" id="0BN-PQ-Z07">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DB8-3h-7gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332.5" y="1087.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Menu" width="375" height="667"/>
+        <image name="Project Detail" width="375" height="667"/>
+        <image name="Projects" width="375" height="667"/>
+        <image name="User Profile" width="375" height="667"/>
+        <image name="icon-email" width="24" height="15"/>
+        <image name="icon-password" width="20" height="20"/>
+        <image name="textfield-input" width="7" height="55"/>
+    </resources>
 </document>
