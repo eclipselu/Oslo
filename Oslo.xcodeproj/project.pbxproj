@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2962A21C92811300D4D4DB /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2962A11C92811300D4D4DB /* ProjectsTableViewController.swift */; };
+		EA2962A51C92A22E00D4D4DB /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2962A41C92A22E00D4D4DB /* ProjectTableViewCell.swift */; };
 		EA5E42651C9010A5001F337F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42641C9010A5001F337F /* AppDelegate.swift */; };
-		EA5E42671C9010A5001F337F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42661C9010A5001F337F /* ViewController.swift */; };
 		EA5E426A1C9010A5001F337F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5E42681C9010A5001F337F /* Main.storyboard */; };
 		EA5E426D1C9010A5001F337F /* Oslo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA5E426B1C9010A5001F337F /* Oslo.xcdatamodeld */; };
 		EA5E42721C9010A5001F337F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5E42701C9010A5001F337F /* LaunchScreen.storyboard */; };
@@ -42,12 +43,14 @@
 		EA5E42B31C9020AE001F337F /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42961C9020AE001F337F /* TransitionManager.swift */; };
 		EA5E42B41C9020AE001F337F /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42971C9020AE001F337F /* TransitionZoom.swift */; };
 		EA5E42B51C9020AE001F337F /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42981C9020AE001F337F /* UnwindSegue.swift */; };
+		EA5E42B91C911D29001F337F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42B81C911D29001F337F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA2962A11C92811300D4D4DB /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
+		EA2962A41C92A22E00D4D4DB /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		EA5E42611C9010A5001F337F /* Oslo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oslo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5E42641C9010A5001F337F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA5E42661C9010A5001F337F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA5E42691C9010A5001F337F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA5E426C1C9010A5001F337F /* Oslo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Oslo.xcdatamodel; sourceTree = "<group>"; };
 		EA5E426E1C9010A5001F337F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		EA5E42961C9020AE001F337F /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		EA5E42971C9020AE001F337F /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		EA5E42981C9020AE001F337F /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		EA5E42B81C911D29001F337F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +121,9 @@
 			children = (
 				EA5E427A1C9020AE001F337F /* Spring */,
 				EA5E42641C9010A5001F337F /* AppDelegate.swift */,
-				EA5E42661C9010A5001F337F /* ViewController.swift */,
+				EA2962A11C92811300D4D4DB /* ProjectsTableViewController.swift */,
+				EA2962A41C92A22E00D4D4DB /* ProjectTableViewCell.swift */,
+				EA5E42B81C911D29001F337F /* LoginViewController.swift */,
 				EA5E42681C9010A5001F337F /* Main.storyboard */,
 				EA5E426E1C9010A5001F337F /* Assets.xcassets */,
 				EA5E42701C9010A5001F337F /* LaunchScreen.storyboard */,
@@ -245,12 +251,14 @@
 				EA5E429C1C9020AE001F337F /* BlurView.swift in Sources */,
 				EA5E42B51C9020AE001F337F /* UnwindSegue.swift in Sources */,
 				EA5E42A71C9020AE001F337F /* LoadingView.swift in Sources */,
+				EA2962A21C92811300D4D4DB /* ProjectsTableViewController.swift in Sources */,
 				EA5E42B01C9020AE001F337F /* SpringTextField.swift in Sources */,
 				EA5E42AB1C9020AE001F337F /* Spring.swift in Sources */,
-				EA5E42671C9010A5001F337F /* ViewController.swift in Sources */,
 				EA5E42AA1C9020AE001F337F /* SoundPlayer.swift in Sources */,
 				EA5E42A31C9020AE001F337F /* DesignableView.swift in Sources */,
+				EA5E42B91C911D29001F337F /* LoginViewController.swift in Sources */,
 				EA5E42A01C9020AE001F337F /* DesignableTabBarController.swift in Sources */,
+				EA2962A51C92A22E00D4D4DB /* ProjectTableViewCell.swift in Sources */,
 				EA5E429D1C9020AE001F337F /* DesignableButton.swift in Sources */,
 				EA5E42651C9010A5001F337F /* AppDelegate.swift in Sources */,
 				EA5E42B41C9020AE001F337F /* TransitionZoom.swift in Sources */,
@@ -418,6 +426,7 @@
 				EA5E42781C9010A5001F337F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
