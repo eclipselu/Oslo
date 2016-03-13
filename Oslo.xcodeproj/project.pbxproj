@@ -44,6 +44,8 @@
 		EA5E42B41C9020AE001F337F /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42971C9020AE001F337F /* TransitionZoom.swift */; };
 		EA5E42B51C9020AE001F337F /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42981C9020AE001F337F /* UnwindSegue.swift */; };
 		EA5E42B91C911D29001F337F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42B81C911D29001F337F /* LoginViewController.swift */; };
+		EA79856F1C94F74D00ECDB8A /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79856E1C94F74D00ECDB8A /* UserProfileViewController.swift */; };
+		EA7985711C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7985701C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		EA5E42971C9020AE001F337F /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		EA5E42981C9020AE001F337F /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		EA5E42B81C911D29001F337F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EA79856E1C94F74D00ECDB8A /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		EA7985701C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				EA2962A11C92811300D4D4DB /* ProjectsTableViewController.swift */,
 				EA2962A41C92A22E00D4D4DB /* ProjectTableViewCell.swift */,
 				EA5E42B81C911D29001F337F /* LoginViewController.swift */,
+				EA79856E1C94F74D00ECDB8A /* UserProfileViewController.swift */,
+				EA7985701C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift */,
 				EA5E42681C9010A5001F337F /* Main.storyboard */,
 				EA5E426E1C9010A5001F337F /* Assets.xcassets */,
 				EA5E42701C9010A5001F337F /* LaunchScreen.storyboard */,
@@ -255,6 +261,7 @@
 				EA5E42B01C9020AE001F337F /* SpringTextField.swift in Sources */,
 				EA5E42AB1C9020AE001F337F /* Spring.swift in Sources */,
 				EA5E42AA1C9020AE001F337F /* SoundPlayer.swift in Sources */,
+				EA7985711C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift in Sources */,
 				EA5E42A31C9020AE001F337F /* DesignableView.swift in Sources */,
 				EA5E42B91C911D29001F337F /* LoginViewController.swift in Sources */,
 				EA5E42A01C9020AE001F337F /* DesignableTabBarController.swift in Sources */,
@@ -274,6 +281,7 @@
 				EA5E42AD1C9020AE001F337F /* SpringButton.swift in Sources */,
 				EA5E42AC1C9020AE001F337F /* SpringAnimation.swift in Sources */,
 				EA5E429E1C9020AE001F337F /* DesignableImageView.swift in Sources */,
+				EA79856F1C94F74D00ECDB8A /* UserProfileViewController.swift in Sources */,
 				EA5E426D1C9010A5001F337F /* Oslo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
