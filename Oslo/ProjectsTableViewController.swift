@@ -13,6 +13,8 @@ class ProjectsTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    self.title = "Projects"
+    
     tableView.estimatedRowHeight = 100
     tableView.rowHeight = UITableViewAutomaticDimension
   }
@@ -61,6 +63,16 @@ class ProjectsTableViewController: UITableViewController {
     performSegueWithIdentifier("DetailSegue", sender: self)
     
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  }
+  
+  @IBAction func unwindToMenu(segue: UIStoryboardSegue) {
+    let sourceController = segue.sourceViewController as! MenuTableViewController
+    self.title = sourceController.currentItem
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    let menuTableViewController = segue.destinationViewController as! MenuTableViewController
+    menuTableViewController.currentItem = self.title!
   }
   
 }

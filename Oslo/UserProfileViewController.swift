@@ -24,14 +24,20 @@ class UserProfileViewController: UIViewController, UICollectionViewDataSource {
   }
   
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 2
+    return 3
   }
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ProjectListCell", forIndexPath: indexPath) as! ProjectListCollectionViewCell
-    cell.projectCoverImageView.image = UIImage(named: "voyage")
-    cell.projectCoverImageView.layer.cornerRadius = 3
-    print("touched")
+    cell.layer.cornerRadius = 3.0
+    cell.layer.shadowColor = UIColor(hex: "000000").CGColor
+    cell.layer.shadowOffset = CGSizeMake(0, 2)
+    cell.layer.shadowOpacity = 0.1
+    cell.layer.shadowRadius = 4
+    cell.clipsToBounds = false
+    
+    cell.projectCoverImageView.layer.cornerRadius = 3.0
+    cell.projectCoverImageView.layer.masksToBounds = true
     
     return cell
   }

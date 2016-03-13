@@ -46,6 +46,9 @@
 		EA5E42B91C911D29001F337F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E42B81C911D29001F337F /* LoginViewController.swift */; };
 		EA79856F1C94F74D00ECDB8A /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79856E1C94F74D00ECDB8A /* UserProfileViewController.swift */; };
 		EA7985711C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7985701C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift */; };
+		EA80A3E91C95A5EE00FA6BA1 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA80A3E81C95A5EE00FA6BA1 /* MenuTableViewController.swift */; };
+		EA80A3EB1C95A5FA00FA6BA1 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA80A3EA1C95A5FA00FA6BA1 /* MenuTableViewCell.swift */; };
+		EA80A3ED1C95AE5E00FA6BA1 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA80A3EC1C95AE5E00FA6BA1 /* MenuTransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +94,9 @@
 		EA5E42B81C911D29001F337F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA79856E1C94F74D00ECDB8A /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		EA7985701C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA80A3E81C95A5EE00FA6BA1 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		EA80A3EA1C95A5FA00FA6BA1 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		EA80A3EC1C95AE5E00FA6BA1 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,9 @@
 				EA5E42B81C911D29001F337F /* LoginViewController.swift */,
 				EA79856E1C94F74D00ECDB8A /* UserProfileViewController.swift */,
 				EA7985701C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift */,
+				EA80A3E81C95A5EE00FA6BA1 /* MenuTableViewController.swift */,
+				EA80A3EA1C95A5FA00FA6BA1 /* MenuTableViewCell.swift */,
+				EA80A3EC1C95AE5E00FA6BA1 /* MenuTransitionManager.swift */,
 				EA5E42681C9010A5001F337F /* Main.storyboard */,
 				EA5E426E1C9010A5001F337F /* Assets.xcassets */,
 				EA5E42701C9010A5001F337F /* LaunchScreen.storyboard */,
@@ -263,6 +272,7 @@
 				EA5E42AA1C9020AE001F337F /* SoundPlayer.swift in Sources */,
 				EA7985711C94FA5100ECDB8A /* ProjectListCollectionViewCell.swift in Sources */,
 				EA5E42A31C9020AE001F337F /* DesignableView.swift in Sources */,
+				EA80A3EB1C95A5FA00FA6BA1 /* MenuTableViewCell.swift in Sources */,
 				EA5E42B91C911D29001F337F /* LoginViewController.swift in Sources */,
 				EA5E42A01C9020AE001F337F /* DesignableTabBarController.swift in Sources */,
 				EA2962A51C92A22E00D4D4DB /* ProjectTableViewCell.swift in Sources */,
@@ -271,11 +281,13 @@
 				EA5E42B41C9020AE001F337F /* TransitionZoom.swift in Sources */,
 				EA5E42A11C9020AE001F337F /* DesignableTextField.swift in Sources */,
 				EA5E42B31C9020AE001F337F /* TransitionManager.swift in Sources */,
+				EA80A3E91C95A5EE00FA6BA1 /* MenuTableViewController.swift in Sources */,
 				EA5E42AF1C9020AE001F337F /* SpringLabel.swift in Sources */,
 				EA5E42991C9020AE001F337F /* AsyncButton.swift in Sources */,
 				EA5E429A1C9020AE001F337F /* AsyncImageView.swift in Sources */,
 				EA5E42A21C9020AE001F337F /* DesignableTextView.swift in Sources */,
 				EA5E42B21C9020AE001F337F /* SpringView.swift in Sources */,
+				EA80A3ED1C95AE5E00FA6BA1 /* MenuTransitionManager.swift in Sources */,
 				EA5E42B11C9020AE001F337F /* SpringTextView.swift in Sources */,
 				EA5E42A61C9020AE001F337F /* KeyboardLayoutConstraint.swift in Sources */,
 				EA5E42AD1C9020AE001F337F /* SpringButton.swift in Sources */,
