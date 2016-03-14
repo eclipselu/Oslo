@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ProjectsTableViewController: UITableViewController {
+class ProjectsTableViewController: UITableViewController, MenuTransitionManagerDelegate {
+  
+  let menuTransitionManager = MenuTransitionManager()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -71,8 +73,17 @@ class ProjectsTableViewController: UITableViewController {
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    let menuTableViewController = segue.destinationViewController as! MenuTableViewController
-    menuTableViewController.currentItem = self.title!
+    if segue.identifier == "MenuSegue" {
+      let menuTableViewController = segue.destinationViewController as! MenuTableViewController
+      menuTableViewController.currentItem = self.title!
+      menuTableViewController.transitioningDelegate = menuTransitionManager
+      
+      menuTransitionManager.delegate = self
+    }
+  }
+  
+  func dismiss() {
+    dismissViewControllerAnimated(true, completion: nil)
   }
   
 }

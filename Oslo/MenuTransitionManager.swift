@@ -8,20 +8,33 @@
 
 import UIKit
 
+@objc protocol MenuTransitionManagerDelegate: class {
+  func dismiss()
+}
+
 class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
   
   let duration = 0.5
   var isPresenting = false
   
-  var snapshot: UIView?
+  weak var delegate: MenuTransitionManagerDelegate?
+  
+  var snapshot: UIView? {
+    didSet {
+      if let delegate = delegate {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: delegate, action: #selector(MenuTransitionManagerDelegate.dismiss))
+        snapshot?.addGestureRecognizer(tapGestureRecognizer)
+      }
+    }
+  }
   
   func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
     return duration
   }
   
   func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-    let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)!
-    let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
+    let projectView = transitionContext.viewForKey(UITransitionContextFromViewKey)!
+    let menuView = transitionContext.viewForKey(UITransitionContextToViewKey)!
     
     guard let container = transitionContext.containerView() else { return }
     
@@ -29,19 +42,19 @@ class MenuTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UI
     let moveUp = CGAffineTransformMakeTranslation(0, -50)
     
     if isPresenting {
-      toView.transform = moveUp
-      snapshot = fromView.snapshotViewAfterScreenUpdates(true)
-      container.addSubview(toView)
+      menuView.transform = moveUp
+      snapshot = projectView.snapshotViewAfterScreenUpdates(true)
+      container.addSubview(menuView)
       container.addSubview(snapshot!)
     }
     
     UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: [], animations: {
       if self.isPresenting {
         self.snapshot?.transform = moveDown
-        toView.transform = CGAffineTransformIdentity
+        menuView.transform = CGAffineTransformIdentity
       } else {
         self.snapshot?.transform = CGAffineTransformIdentity
-        fromView.transform = moveUp
+        projectView.transform = moveUp
       }
       }, completion: { finished in
         transitionContext.completeTransition(true)

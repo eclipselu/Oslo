@@ -91,7 +91,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="426"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vhz-Mi-IBc" id="uKX-93-HG1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="425.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="426"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voyage" translatesAutoresizingMaskIntoConstraints="NO" id="agj-nt-nd7">
@@ -108,7 +108,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKZ-Ji-XSo" userLabel="upvoteLabel" customClass="SpringButton" customModule="Oslo" customModuleProvider="target">
-                                            <rect key="frame" x="230" y="286" width="61" height="14.5"/>
+                                            <rect key="frame" x="230" y="286" width="61" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="61" id="VKd-rR-3qC"/>
                                             </constraints>
@@ -127,8 +127,8 @@
                                                 <action selector="upvoteButtonDidPressed:" destination="vhz-Mi-IBc" eventType="touchUpInside" id="HlG-V7-IAh"/>
                                             </connections>
                                         </button>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="YXB-OM-M4k" customClass="AutoTextView" customModule="Oslo" customModuleProvider="target">
-                                            <rect key="frame" x="16" y="308" width="343" height="66.5"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="YXB-OM-M4k" customClass="AutoTextView" customModule="Oslo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="308" width="343" height="66"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
                                             <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
@@ -149,7 +149,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcE-GR-Cfy" userLabel="commentLabel" customClass="SpringButton" customModule="Oslo" customModuleProvider="target">
-                                            <rect key="frame" x="305" y="285.5" width="46" height="14.5"/>
+                                            <rect key="frame" x="305" y="286" width="46" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="46" id="pTa-6z-d9n"/>
                                             </constraints>

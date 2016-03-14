@@ -15,6 +15,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var passwordTextField: DesignableTextField!
   
   @IBAction func closeButtonDidPressed(sender: AnyObject) {
+    view.endEditing(true)
+    
     loginView.animation = "fall"
     loginView.animate()
   }
