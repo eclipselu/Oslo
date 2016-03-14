@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -91,13 +92,14 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="426"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vhz-Mi-IBc" id="uKX-93-HG1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="426"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="425.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voyage" translatesAutoresizingMaskIntoConstraints="NO" id="agj-nt-nd7">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="265" id="4fi-5d-To3"/>
+                                                <constraint firstAttribute="width" secondItem="agj-nt-nd7" secondAttribute="height" multiplier="75:53" id="HjJ-zv-Adi"/>
                                                 <constraint firstAttribute="width" constant="375" id="oON-w6-gy2"/>
                                             </constraints>
                                         </imageView>
@@ -246,7 +248,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBH-w8-TX9">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBH-w8-TX9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             <connections>
                                                 <action selector="closeButtonDidPressed:" destination="xD1-5L-cBz" eventType="touchUpInside" id="lOd-2p-Jfj"/>
@@ -254,6 +256,12 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="uBH-w8-TX9" secondAttribute="trailing" id="AwP-4a-tvc"/>
+                                        <constraint firstAttribute="bottom" secondItem="uBH-w8-TX9" secondAttribute="bottom" id="Gg6-NK-0ND"/>
+                                        <constraint firstItem="uBH-w8-TX9" firstAttribute="top" secondItem="NWZ-cc-vbA" secondAttribute="top" id="TTs-3q-1hC"/>
+                                        <constraint firstItem="uBH-w8-TX9" firstAttribute="leading" secondItem="NWZ-cc-vbA" secondAttribute="leading" id="puH-jW-TwG"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
@@ -370,13 +378,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgO-vg-vE6">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgO-vg-vE6">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             <connections>
                                                 <action selector="closeButtonDidPressed:" destination="FP4-Un-YKo" eventType="touchUpInside" id="N0C-kW-193"/>
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EgO-vg-vE6" firstAttribute="top" secondItem="8t8-i1-SUp" secondAttribute="top" id="3av-UJ-jjA"/>
+                                        <constraint firstItem="EgO-vg-vE6" firstAttribute="leading" secondItem="8t8-i1-SUp" secondAttribute="leading" id="4AF-9k-IAi"/>
+                                        <constraint firstAttribute="bottom" secondItem="EgO-vg-vE6" secondAttribute="bottom" id="Sfb-hp-L1h"/>
+                                        <constraint firstAttribute="trailing" secondItem="EgO-vg-vE6" secondAttribute="trailing" id="w4v-Vb-I4N"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
@@ -515,6 +529,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="T4P-T8-iXB">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -535,6 +550,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="Zdq-AJ-6Co" firstAttribute="leading" secondItem="HXi-MH-nYQ" secondAttribute="leading" constant="16" id="SDk-z7-Ngq"/>
                                         <constraint firstItem="Zdq-AJ-6Co" firstAttribute="centerY" secondItem="HXi-MH-nYQ" secondAttribute="centerY" id="qN5-jZ-8O7"/>
